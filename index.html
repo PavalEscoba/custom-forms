@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Custom Forms</title>
+</head>
+
+<body>
+  <div class="form-style-10">
+    <h1>Sign Up Now!<span>Sign up and tell us what you think of the site!</span></h1>
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLSerG6cWaQRcElmqn-ZyBqbaPEXtpPslvToc1SqTlBQIj8JIZg/formResponse"
+      method="post" target="hidden_iframe" onsubmit="submitted=true;">
+      <div class="section"><span>1</span>First Name & Address</div>
+      <div class="inner-wrap">
+        <label>Your Full Name <input class="field1" type="text" name="entry.1647908718" required/></label>
+        <label>Address <textarea class="field2" name="entry.1397731083" required></textarea></label>
+      </div>
+
+      <div class="section"><span>2</span>Email & Phone</div>
+      <div class="inner-wrap">
+        <label>Email Address <input class="field3" type="email" name="entry.564465634"  required/></label>
+        <label>Phone Number <input class="field4" type="text" name="entry.1566955866" required/></label>
+      </div>
+
+      <div class="button-section">
+        <button>SEND </button>
+      </div>
+    </form>
+  </div>
+  <script type="text/javascript">var submitted = false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+    onload="if(submitted)  {window.location='.';}"></iframe>
+</body>
+
+</html>
